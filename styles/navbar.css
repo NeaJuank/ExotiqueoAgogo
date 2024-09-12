@@ -1,60 +1,66 @@
-/*containers*/
+/* Divs */
 #navBar-placeholder {
      position: sticky;
      top: 0;
      z-index: 2;
-}
+ }
  
-#navbarMenu {
+ #navbarMenu {
      position: fixed;
      top: 0;
      width: 100%;
-     background-color: #2C2C2C;
-     color: white;
+     background-color: #af0b0b; 
+     color: #f5f5f5; 
      display: flex;
-     justify-content: space-between; 
+     justify-content: space-between;
      align-items: center;
-     height: 50px; 
-}
+     height: 60px; 
+     box-shadow: 0 4px 8px #4e0202; 
+ }
  
-#navList {
+ /* Lista de Navegacion */
+ #navList {
      display: flex;
      list-style-type: none;
-     margin: 0; 
+     margin: 0;
      padding: 0;
-     align-items: center; 
-     width: 100%; 
-}
-
-/*items*/
-ul .nav-Items {
-     font-size: 17px;
-     font-family: sans-serif;
-     padding: 0.1vh 2vw;
-     transition: all 0.2s linear;
-     display: flex;
-     align-items: center; 
-}
-
-/*links*/
-.links-Navbar {
-     color: white;
-     text-decoration: none;
-}
-
-/*Efecto hover*/
-.nav-Items:hover {
-     scale: 1.1;
-}
-
-.nav-right {
-    margin-left: auto; 
-    display: flex;
-}
+     align-items: center;
+     width: 100%;
+ }
  
-@media (max-width: 600px) {
+ /* Items */
+ ul .nav-Items {
+     font-size: 16px; 
+     font-family: 'Arial', sans-serif;
+     padding: 0.5vh 2vw; 
+     transition: all 0.3s ease; 
+     display: flex;
+     align-items: center;
+ }
+ 
+ /* Links */
+ .links-Navbar {
+     color: #f5f5f5; 
+     text-decoration: none;
+     transition: color 0.3s ease, transform 0.3s ease; 
+ }
+ 
+ 
+ .nav-Items:hover {
+     transform: scale(1.1); 
+     color: #af0b0b; 
+ }
+ 
+ .nav-right {
+     margin-left: auto;
+     display: flex;
+ }
+ 
+ /* Diseño Responsivo */
+ @media (max-width: 600px) {
      ul .nav-Items {
-          font-size: 8px;
+         font-size: 14px; 
+         padding: 0.5vh 1vw; 
      }
-}
+ }
  

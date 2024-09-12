@@ -1,121 +1,115 @@
+/* Estilos generales */
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a; 
+    color: #e0e0e0; 
     margin: 0;
     padding: 0;
 }
 
 /*---------------------------------------carousel-----------------------*/
-.d-item{
+.d-item {
     height: 100vh;
 }
 
-.d-img{
+.d-img {
     height: 100%;
-    object-fit: fill;
+    object-fit: cover; 
 }
 
-/*carousel info <div*/
-#carousel-info{
+#carousel-info {
     z-index: 1;
     position: absolute;
-    margin-top: 30vh;
-    margin-left: 8vw;
+    margin-top: 25vh; 
+    margin-left: 5vw;
     padding: 20px;
 }
 
-/*company's title*/
-#corouselTitle{
+#corouselTitle {
     font-size: 3em;
     font-weight: bold;
-    color: black;
+    color: #af0b0b; 
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
-/*text about the company*/
-.text-carousel{
-    font-size: 1.1em;
-    color: white;
-    padding-right: 60%;
+.text-carousel {
+    font-size: 1.2em; 
+    color: #e0e0e0; 
+    padding-right: 50%; 
 }
 
-/*carousel button*/
-#carousel-btn{
+#carousel-btn {
     font-size: 18px;
     margin-top: 30px;
     padding: 10px 20px;
-    background-color: #F2613F;
+    background-color: #af0b0b; 
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 30px;
-    transition: all 0.2s linear;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#slidebuttonantes{
+#slidebuttonantes, #slidebuttondespues {
     margin: 0;
     width: 80px;
-}  
-
-#slidebuttondespues{
-    margin: 0;
-    width: 80px;
-}  
-
-#carousel-btn:hover{
-    background-color: #e05637;
-    scale: 1.07;
 }
 
+#carousel-btn:hover {
+    background-color: #af0b0b; 
+    transform: scale(1.07);
+}
 
-
-@media (max-width: 500px){
-    .d-item{
+@media (max-width: 500px) {
+    .d-item {
         height: 80vh;
     }
 
-    #carousel-info{
+    #carousel-info {
         margin-top: 50%;
         margin-left: 7vw;
     }
 
-    #corouselTitle{
+    #corouselTitle {
         font-size: 2em;
     }
     
-    .text-carousel{
-        font-size: 0.7em;
-        color: white;
+    .text-carousel {
+        font-size: 0.8em; 
         padding-right: 30%;
     }
     
-    #carousel-btn{
+    #carousel-btn {
         font-size: 13px;
         padding: 10px 15px;
     }
 }
 
-
 /*----------------------------------------------------------------------ESTILOS CARDS--------------------------------------------------------------------*/
 
-#title-container{
-    background: #c6c6c69e;
+#title-container {
+    background: #af0b0b; 
 }
 
 .card {
-    border-radius: 15px;
+    border-radius: 10px; 
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px #af0b0b; 
 }
+
 .card-img-top {
     transition: opacity 0.3s ease;
 }
 
 .card-img-top-3 {
     width: 100%;
-    height: 29vh;
+    height: 30vh; 
 }
 
 .card-img-overlay {
@@ -124,7 +118,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #af0b0b;
     opacity: 0;
     transition: opacity 0.3s ease;
     display: flex;
@@ -133,21 +127,26 @@ body {
     color: white;
     font-size: 1.5rem;
 }
+
 .card:hover .card-img-overlay {
     opacity: 1;
 }
+
 .card-body {
     text-align: center;
 }
+
 .card-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem; 
     font-weight: bold;
 }
+
 .btn {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .btn:hover {
-    background-color: #ff5722;
+    background-color: #af0b0b; 
     color: white;
 }
 
@@ -158,9 +157,10 @@ body {
     display: inline-block;
     font-size: 2.5rem;
     font-weight: bold;
-    color: black; 
+    color: #af0b0b; 
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
+
 .section-title::before {
     content: '';
     position: absolute;
@@ -168,5 +168,5 @@ body {
     bottom: -10px;
     width: 50%;
     height: 5px;
-    background-color: #ff5722; 
+    background-color: #af0b0b; 
 }
