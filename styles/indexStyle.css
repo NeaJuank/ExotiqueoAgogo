@@ -93,10 +93,15 @@ body {
 }
 
 .card {
-    border-radius: 10px; 
+    width: 100%; /* Para que las cards ocupen todo el ancho disponible */
+    max-width: 300px; /* Un tamaño máximo para evitar que crezcan demasiado */
+    margin: 20px auto; /* Centrarlas y añadir espacio alrededor */
+    height: auto; /* Que la altura dependa del contenido */
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 
 .card:hover {
     transform: scale(1.05);
@@ -109,7 +114,8 @@ body {
 
 .card-img-top-3 {
     width: 100%;
-    height: 30vh; 
+    height: 200px; /* Una altura fija más adecuada */
+    object-fit: cover; /* Ajustar la imagen sin distorsionar */
 }
 
 .card-img-overlay {
@@ -169,6 +175,17 @@ body {
     width: 50%;
     height: 5px;
     background-color: #af0b0b; 
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* En pantallas pequeñas que ocupen el 100% del ancho */
+        height: auto;
+    }
+    
+    .card-img-top-3 {
+        height: 150px; /* Ajustar la altura de las imágenes en pantallas pequeñas */
+    }
 }
 
 
