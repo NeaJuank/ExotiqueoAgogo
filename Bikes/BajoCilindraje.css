@@ -16,13 +16,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #2C2C2C;
+    background-color: #af0b0b;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(#af0b0b);
 }
 
 #navList {
@@ -79,7 +79,7 @@ ul .nav-Items {
 
 /* Propiedad - Características */
 .container h4 {
-    color: #007bff;
+    color: #af0b0b;
     margin-bottom: 15px;
 }
 
@@ -97,7 +97,7 @@ ul .nav-Items {
 
 .row p i {
     margin-right: 8px;
-    color: #007bff;
+    color: #af0b0b;
 }
 
 /* Footer */
@@ -186,7 +186,7 @@ ul .nav-Items {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 100%; /* Asegura que la tarjeta llene el espacio disponible */
+    height: 100%; 
 }
 
 /* Estilos para las imágenes de las tarjetas */

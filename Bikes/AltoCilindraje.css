@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #B8ACA9;
     color: #333;
 }
 
@@ -201,5 +201,5 @@ i{
 .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem; 
+    gap: 1rem; 
 }

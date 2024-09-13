@@ -72,15 +72,22 @@
 <div class="container my-5" id="dynamic-image-text-section">
     <div class="row">
       <div class="col-md-5 col-lg-4" id="images-column">
-        <img src="" class="image-big mb-4" alt="Imagen 1">
-        <img src="" class="image-small" alt="Imagen 2">
+        <img src="assets/imgs/clientes/Exotiqueo Agogo.png" class="image-big mb-4" alt="Imagen 1">
+        <img src="assets/imgs/clientes/fc1c312edb3fa8ae71d8e625a1ccf94a.jpg" class="image-small" alt="Imagen 2">
       </div>
   
       <div class="col-md-7 col-lg-8 d-flex align-items-center" id="text-column">
         <div>
           <h3>EXOTIQUEO AGOGO</h3>
-          <p>VISION</p>
-          <p>MISION</p>
+          <p>
+            <i>MISION</i>
+            Ofrecer una experiencia de compra excepcional en motocicletas nuevas al proporcionar una amplia gama de modelos de alta calidad que se ajusten a las necesidades y preferencias de cada cliente. Nos comprometemos a brindar un servicio personalizado y profesional, garantizando que cada motocicleta que vendemos no solo cumpla con los más altos estándares de calidad, sino que también se adapte perfectamente a las expectativas y estilo de vida de nuestros clientes.
+          
+          <p>
+            <i>VISION</i>
+            Convertirnos en el líder en el mercado de venta de motocicletas nuevas, reconocido por nuestra capacidad de ofrecer soluciones de movilidad innovadoras y adaptadas a las diversas necesidades de nuestros clientes. Aspiramos a ser la primera opción para motociclistas que buscan calidad, confiabilidad y un servicio al cliente inigualable, estableciendo un estándar de excelencia en la industria y contribuyendo a la satisfacción y lealtad de nuestros clientes.
+        </p>
+        </p>
           <a href="#" class="btn btn-primary" id="cta-btn">¿Saber mas?</a>
         </div>
       </div>
@@ -99,31 +106,31 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="" class="card-img-top" alt="...">
+                        <img src="assets/imgs/clientes/Gama Baja.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Apto 1</h5>
+                            <h5 class="card-title">Gama Baja</h5>
                             <p class="card-text">Info carta 1</p>
-                            <a href="" target="_blank" class="btn btn-info">Ir a</a>
+                            <a href="Bikes/BajoCilindraje.html" target="_blank" class="btn btn-info">Ir a</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="" class="card-img-top" alt="...">
+                        <img src="assets/imgs/clientes/Gama Media.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Apto 2</h5>
-                            <p class="card-text">Info carta 2</p>
-                            <a href="" target="_blank" class="btn btn-info">Ir a</a>
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">Gama Media</p>
+                            <a href="Bikes/CilindrajeMedio.html" target="_blank" class="btn btn-info">Ir a</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
-                        <img src="" class="card-img-top-3" alt="...">
+                        <img src="assets/imgs/clientes/Gama Alta.png" class="card-img-top-3" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Apto 3</h5>
+                            <h5 class="card-title">Gama Alta</h5>
                             <p class="card-text">Info carta 3</p>
-                            <a href="" target="_blank" class="btn btn-info">Ir a</a>
+                            <a href="Bikes/AltoCilindraje.html" target="_blank" class="btn btn-info">Ir a</a>
                         </div>
                     </div>
                 </div>
@@ -161,9 +168,29 @@
       </div>
   </div>
 
-                                                        <!--ACA VA EL CONTACTO-->
 
+<div class="vistas">
+  <p>Has ingresado a esta página <span id="contador"></span> veces.</p>
+</div>
 
+<script>
+// Obtén el contador actual desde el localStorage
+ let contador = localStorage.getItem('visitas');
+
+ // Si no existe, inicialízalo en 0
+ if (contador === null) {
+     contador = 0;
+ }
+
+ // Incrementa el contador
+ contador++;
+
+ // Actualiza el localStorage con el nuevo valor
+ localStorage.setItem('visitas', contador);
+
+ // Muestra el valor del contador en la página
+ document.getElementById('contador').innerText = contador;                                         
+</script>
 
   <!----------------@Juan: footer--------------------->
   <footer class="footer">
