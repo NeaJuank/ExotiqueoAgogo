@@ -2,39 +2,48 @@ html, body {
     height: 100%;
     margin: 0;
 }
+
 body {
     display: flex;
     flex-direction: column;
 }
+
 .container {
-    flex: 1;
+    flex: 1; /* Esto asegura que el contenido ocupe todo el espacio disponible */
 }
+
 .footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0; 
+    padding: 20px 0;
+    width: 100%;
     position: relative;
     bottom: 0;
-    width: 100%;
 }
+
 .footer h5 {
     color: #af0b0b;
 }
+
 .footer a {
     color: #fff;
     text-decoration: none;
 }
+
 .footer a:hover {
     text-decoration: underline;
 }
+
 .app-icons img {
     width: 150px;
 }
+
 .social-icons a {
     color: #fff;
     margin-right: 15px;
     font-size: 1.5rem;
 }
+
 .social-icons a:hover {
     color: #af0b0b;
 }

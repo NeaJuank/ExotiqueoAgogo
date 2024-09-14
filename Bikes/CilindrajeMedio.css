@@ -100,54 +100,7 @@ ul .nav-Items {
     color: #007bff;
 }
 
-/* Footer */
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 60px 0;
-}
 
-.footer h5 {
-    color: #af0b0b; /* Color actualizado */
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.footer ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.footer ul li a {
-    color: #adb5bd;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer ul li a:hover {
-    color: #fff;
-}
-
-.app-icons img {
-    width: 150px;
-    transition: transform 0.3s ease;
-}
-
-.app-icons img:hover {
-    transform: scale(1.1);
-}
-
-.social-icons a {
-    font-size: 1.5rem;
-    color: #fff;
-    margin-right: 15px;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: #af0b0b; /* Color actualizado */
-    transform: scale(1.2);
-}
 
 /* Animaciones */
 @keyframes fadeIn {
