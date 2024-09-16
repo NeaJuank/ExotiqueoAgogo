@@ -1,0 +1,21 @@
+.vistas {
+    background-color: #1c1e20;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px #af0b0b(0, 0, 0, 0.1);
+  }
+  
+  .vistas p {
+    font-size: 18px;
+    color: #af0b0b;
+    margin: 0;
+  }
+  
+  #contador {
+    font-weight: bold;
+    color: #af0b0b;
+  }
+  
