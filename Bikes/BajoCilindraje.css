@@ -63,14 +63,6 @@
     align-items: center;
   }
   
-  
-  @media (max-width: 600px) {
-    ul .nav-Items {
-      font-size: 16px; 
-      padding: 0.5vh 1vw; 
-    }
-  }
-
   .tarjetas-contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -114,14 +106,9 @@
 }
 
 @media (max-width: 768px) {
-    .tarjetas-contenedor {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .tarjetas-contenedor {
+      grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media (max-width: 480px) {
-    .tarjetas-contenedor {
-        grid-template-columns: 1fr;
-    }
-}
   
