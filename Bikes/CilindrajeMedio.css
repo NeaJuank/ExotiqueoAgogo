@@ -119,6 +119,16 @@ body {
   font-size: 0.9rem; /* Tamaño de fuente ajustado */
   margin-bottom: 1rem;
 }
+
+.btn-primary {
+  background-color: #af0b0b !important; 
+  border-color: #af0b0b !important;
+}
+
+.btn-primary:hover {
+  background-color: #6b0505 !important; 
+  border-color: #6b0505 !important;
+}
   
   
   @media (max-width: 600px) {
