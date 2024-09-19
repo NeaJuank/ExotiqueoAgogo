@@ -1,5 +1,11 @@
 /*NAVBAR CODE*/
 /* Divs */
+/*NAVBAR CODE*/
+/* Divs */
+body {
+  padding-top: 70px; /* Espacio suficiente para el navbar */
+}
+
 #navBar-placeholder {
     position: sticky;
     top: 0;
@@ -36,7 +42,7 @@
     font-size: 18px; 
     font-family: 'Verdana', sans-serif; 
     padding: 0.5vh 1.5vw; 
-    transition: background-color 0.3s ease, transform 0.3s ease; 
+    transition: background-color 0.3s ease, transform 0.3s ease;/* Transición */
     border-radius: 5px; 
     display: flex;
     align-items: center;
@@ -62,7 +68,18 @@
     display: flex;
     align-items: center;
   }
-  
+  h1{
+    margin-top: 30vh;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+  p{
+    border-radius: 50%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+ 
+  }
+   
   .tarjetas-contenedor {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -105,10 +122,22 @@
   margin-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-  .tarjetas-contenedor {
-      grid-template-columns: repeat(2, 1fr);
-  }
+.btn-primary {
+  background-color: #af0b0b !important; 
+  border-color: #af0b0b !important;
 }
 
+.btn-primary:hover {
+  background-color: #6b0505 !important; 
+  border-color: #6b0505 !important;
+}
+  
+  
+  @media (max-width: 600px) {
+    ul .nav-Items {
+      font-size: 16px; 
+      padding: 0.5vh 1vw; 
+    }
+  }
+  
   
