@@ -1,5 +1,19 @@
-.contac{
+.contac {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     margin-top: 2vh;
+  }
+  
+
+.contac button{
+    background-color: #af0b0b; /* Cambiado de #007BFF a #af0b0b */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
 
 #contact-container {
