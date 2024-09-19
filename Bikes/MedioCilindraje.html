@@ -31,6 +31,7 @@
       </ul>
     </nav>
   </div>
+
   <div class="tarjetas-contenedor">
     <div class="tarjeta">
         <img src="assetsbikes/Yamaha_mt03.png" alt="Moto 1">
@@ -120,6 +121,19 @@
     </div>
 
   </div>
+
+  <!----------------------------------------------------------------SCRIPT--------------------------------------------------->
+
+  <script>
+    function addToCart(name, price) {
+        const cartItem = { name, price };
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+        cart.push(cartItem);
+        localStorage.setItem('cart', JSON.stringify(cart));
+        window.location.href = 'carrito.html'; 
+    }
+  </script>
+    
 
   <footer class="footer">
     <div class="container">
