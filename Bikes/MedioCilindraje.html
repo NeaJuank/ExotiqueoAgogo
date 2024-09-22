@@ -16,17 +16,19 @@
 <body>
 
   <h1>Nuestras Motos de Gama Media</h1>
-  <p>Las motos de gama media, con cilindradas de 250cc a 600cc, ofrecen un equilibrio perfecto entre rendimiento y accesibilidad. Estas motocicletas proporcionan una potencia suficiente para enfrentar tanto trayectos urbanos como carreteras rápidas, sin el costo y el mantenimiento de las motos de alto cilindraje. Son ideales para quienes buscan una combinación de agilidad, confort y capacidad de respuesta, siendo adecuadas para una amplia gama de usos, desde desplazamientos diarios hasta viajes de fin de semana. Su diseño suele incorporar características avanzadas como suspensiones mejoradas, frenos eficientes y tecnologías modernas, lo que las convierte en una opción versátil para motociclistas de nivel intermedio que desean una experiencia de conducción emocionante y equilibrada.</p>
+  <p>Las motos de gama media, con cilindradas de 250cc a 600cc, ofrecen un equilibrio perfecto entre rendimiento y accesibilidad...</p>
+  
   <div id="navBar-placeholder">
     <nav id="navbarMenu">
       <ul id="navList">
-        <li class="nav-Items"><a href="../index.html" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="nav-Items"><a href="../index.html#carouselExampleAutoplaying" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
         <li class="nav-Items"><a href="../index.html#dynamic-image-text-section" class="links-Navbar"><i class="fa-regular fa-user"></i> Acerca de</a></li>
         <li class="nav-Items"><a href="../index.html#sales-container" class="links-Navbar"><i class="fa-solid fa-wallet"></i> En venta</a></li>
-        <li class="nav-Items"><a href="../index.html#contact-container" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contacto</a></li>
+        <li class="nav-Items"><a href="../index.html#forms" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contacto</a></li>
+        <li class="nav-Items"><a href="../CarritoCompras/Carrito.html" class="links-Navbar"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Cart</a></li>
         <div class="nav-right">
-          <li class="nav-Items"><a href="login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
-          <li class="nav-Items"><a href="register/register.html" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
+          <li class="nav-Items"><a href="../login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+          <li class="nav-Items"><a href="../register/register.html" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
         </div>
       </ul>
     </nav>
@@ -37,104 +39,88 @@
         <img src="assetsbikes/Yamaha_mt03.png" alt="Moto 1">
         <h2>Mt-03</h2>
         <p class="card-text">
-          <p><strong>Marca:</strong> Yamaha</p>
-          <p><strong>cilindraje:</strong> 321cc</p>
-          <p><strong>Precio:</strong> $4,900 USD</p>
-          <p><strong>Tipo:</strong> Naked</p>
+          <strong>Marca:</strong> Yamaha<br>
+          <strong>Cilindraje:</strong> 321cc<br>
+          <strong>Precio:</strong> $4,900 USD<br>
+          <strong>Tipo:</strong> Naked
         </p>
-          <a href="#" class="btn btn-primary">Añadir al carrito</a>
-        </p>
+        <a href="#" class="btn btn-primary" onclick="addToCart('MT-03', 'Yamaha', 321, 4900, 'assetsbikes/Yamaha_mt03.png')">Añadir al carrito</a>
     </div>
+    
     <div class="tarjeta">
         <img src="assetsbikes/fz25-azul2.png" alt="Moto 2">
         <h2>FZ25</h2>
         <p class="card-text">
-          <p><strong>Marca:</strong> Yamaha<br></p>
-          <p><strong>Cilindraje:</strong> 250cc</p>
-          <p><strong>Precio:</strong> $3,000 USD</p>
-          <p><strong>Tipo:</strong> Naked.</p>
+          <strong>Marca:</strong> Yamaha<br>
+          <strong>Cilindraje:</strong> 250cc<br>
+          <strong>Precio:</strong> $3,000 USD<br>
+          <strong>Tipo:</strong> Naked
         </p>
-        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('FZ25', 'Yamaha', 250, 3000, 'assetsbikes/fz25-azul2.png')">Añadir al carrito</a>    
     </div>
+
     <div class="tarjeta">
         <img src="assetsbikes/cb500f-roja.png" alt="Moto 3">
         <h2>CB500F</h2>
         <p class="card-text">
-          <p><strong>Marca:</strong> Honda</p>
-          <p><strong>Cilindraje:</strong> 471cc</p>
-          <p><strong>Precio:</strong> $6,000 USD</p>
-          <p><strong>Tipo:</strong> Naked.</p>
+          <strong>Marca:</strong> Honda<br>
+          <strong>Cilindraje:</strong> 471cc<br>
+          <strong>Precio:</strong> $6,000 USD<br>
+          <strong>Tipo:</strong> Naked
         </p> 
-      <a href="#" class="btn btn-primary">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('CB500F', 'Honda', 471, 6000, 'assetsbikes/cb500f-roja.png')">Añadir al carrito</a>    
     </div>
+
     <div class="tarjeta">
         <img src="assetsbikes/kawasaki-ninja400krt.png" alt="Moto 4">
+        <h2>Ninja 400</h2>
         <p class="card-text">
-          <h2>Ninja 400</h2>
-          <p class="card-text">
-            <p> <strong>Marca:</strong> Kawasaki</p>
-             <p><strong>Cilindraje:</strong> 399cc</p>
-             <p><strong>Precio:</strong> $5,300 USD</p>
-             <p><strong>Tipo:</strong> Deportiva.</p>
-           </p>
-          <a href="#" class="btn btn-primary">Añadir al carrito</a>
+          <strong>Marca:</strong> Kawasaki<br>
+          <strong>Cilindraje:</strong> 399cc<br>
+          <strong>Precio:</strong> $5,300 USD<br>
+          <strong>Tipo:</strong> Deportiva
         </p>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Ninja 400', 'Kawasaki', 399, 5300, 'assetsbikes/kawasaki-ninja400krt.png')">Añadir al carrito</a>
     </div>
 
     <div class="tarjeta">
         <img src="assetsbikes/royale-himalayan.png" alt="Moto 5">
         <h2>Himalayan</h2>
         <p class="card-text">
-          <p><strong>Marca:</strong> Royal Enfield</p>
-          <p><strong>Cilindraje:</strong> 411cc</p>
-          <p><strong>Precio:</strong> $5,000 USD</p>
-          <p><strong>Tipo:</strong> Aventura.</p>
+          <strong>Marca:</strong> Royal Enfield<br>
+          <strong>Cilindraje:</strong> 411cc<br>
+          <strong>Precio:</strong> $5,000 USD<br>
+          <strong>Tipo:</strong> Aventura
         </p>
-          <a href="#" class="btn btn-primary">Añadir al carrito</a>
-        </p>
-     </div>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Himalayan', 'Royal Enfield', 411, 5000, 'assetsbikes/royale-himalayan.png')">Añadir al carrito</a>        
+    </div>
+
     <div class="tarjeta">
         <img src="assetsbikes/KTM_390_DUKE.png" alt="Moto 6">
         <h2>Duke 390</h2>
         <p class="card-text">
-          <p><strong>Marca:</strong> KTM</p>
-          <p><strong>Cilindraje:</strong> 373cc</p>
-          <p><strong>Precio:</strong> $5,000 USD</p>
-          <p><strong>Tipo:</strong> Naked.</p>
+          <strong>Marca:</strong> KTM<br>
+          <strong>Cilindraje:</strong> 373cc<br>
+          <strong>Precio:</strong> $5,000 USD<br>
+          <strong>Tipo:</strong> Naked
         </p>
-           <a href="#" class="btn btn-primary">Añadir al carrito</a>
-         </p>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Duke 390', 'KTM', 373, 5000, 'assetsbikes/KTM_390_DUKE.png')">Añadir al carrito</a>         
     </div>
 
     <div class="tarjeta">
-        <img src="assetsbikes/Benelli_TNT_300.png" alt="Moto 6">
+        <img src="assetsbikes/Benelli_TNT_300.png" alt="Moto 7">
         <h2>TNT 300</h2>
         <p class="card-text">
-          <p><strong>Marca:</strong> Benelli</p>
-          <p><strong>Cilindraje:</strong> 300cc</p>
-          <p><strong>Precio:</strong> $4,800 USD</p>
-          <p><strong>Tipo:</strong> Naked.</p>
+          <strong>Marca:</strong> Benelli<br>
+          <strong>Cilindraje:</strong> 300cc<br>
+          <strong>Precio:</strong> $4,800 USD<br>
+          <strong>Tipo:</strong> Naked
         </p>
-          
-           <a href="#" class="btn btn-primary">Añadir al carrito</a>
-         </p>
+        <a href="#" class="btn btn-primary" onclick="addToCart('TNT 300', 'Benelli', 300, 4800, 'assetsbikes/Benelli_TNT_300.png')">Añadir al carrito</a>         
     </div>
-
   </div>
 
-  <!----------------------------------------------------------------SCRIPT--------------------------------------------------->
-
-  <script>
-    function addToCart(name, price) {
-        const cartItem = { name, price };
-        let cart = JSON.parse(localStorage.getItem('cart')) || [];
-        cart.push(cartItem);
-        localStorage.setItem('cart', JSON.stringify(cart));
-        window.location.href = 'carrito.html'; 
-    }
-  </script>
-    
-
+  <!--------------------------------------------------------------------@Juan: footer------------------------------------------------------------------->
   <footer class="footer">
     <div class="container">
         <div class="row">
@@ -148,7 +134,7 @@
                     <li><a href="#">Become a Partner</a></li>
                 </ul>
             </div>
-  
+
             <!-- Comunidad Bikes -->
             <div class="col-md-3">
                 <h5>Community</h5>
@@ -161,7 +147,7 @@
                     <li><a href="#">Terms & Condition</a></li>
                 </ul>
             </div>
-  
+
             <!-- no se si esto vaya o no :D -->
             <div class="col-md-3">
                 <h5>App Available on</h5>
@@ -170,7 +156,7 @@
                     <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store" class="mt-3"></a>
                 </div>
             </div>
-  
+
             <!-- Seguirnos en -->
             <div class="col-md-3">
                 <h5>Follow on</h5>
@@ -182,7 +168,7 @@
                 </div>
             </div>
         </div>
-  
+
         <!-- Footer final -->
         <div class="row mt-4">
             <div class="col text-center">
@@ -190,8 +176,19 @@
             </div>
         </div>
     </div>
-  </footer>
+</footer>
   
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function addToCart(name, brand, cylinder, price, image) {
+        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+        const item = { name, brand, cylinder, price, image };
+        cartItems.push(item);
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        alert(`${name} ha sido añadido al carrito.`);
+    }
+  </script>
+  
 </body>
 </html>
