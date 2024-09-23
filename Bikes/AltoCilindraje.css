@@ -1,7 +1,7 @@
 /*NAVBAR CODE*/
 /* Divs */
 body {
-  padding-top: 70px; /* Espacio suficiente para el navbar */
+  padding-top: 70px; 
 }
 
 #navBar-placeholder {
@@ -117,7 +117,7 @@ p {
 }
 
 .card-text {
-  font-size: 0.9rem; /* Tamaño de fuente ajustado */
+  font-size: 0.9rem; 
   margin-bottom: 1rem;
 }
 

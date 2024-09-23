@@ -44,7 +44,7 @@
         <strong>Cilindraje:</strong> 999cc<br>
         <strong>Precio:</strong> $20,000 USD<br>
         <strong>Tipo:</strong> Deportiva<br>
-        <a href="#" class="btn btn-primary" onclick="addToCart('S 1000R', 20000)">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('S 1000R', 20000, 999)">Añadir al carrito</a>
       </p>
     </div>
     
@@ -104,7 +104,7 @@
         <strong>Cilindraje:</strong> 765cc<br>
         <strong>Precio:</strong> $11,000 USD<br>
         <strong>Tipo:</strong> Naked<br>
-        <a href="#" class="btn btn-primary" onclick="addToCart('Street Triple 765', 11000)">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Street Triple 765',765 , 11000)">Añadir al carrito</a>
       </p>
     </div>
     
@@ -185,10 +185,26 @@
   <script>
     function addToCart(name, brand, cylinder, price) {
       const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-      cartItems.push({ name, brand, cylinder, price });
+      const item = { name, brand, cylinder, price }; // Sin imagen
+      cartItems.push(item);
       localStorage.setItem('cartItems', JSON.stringify(cartItems));
       alert(`${name} ha sido añadido al carrito.`);
-    }
+  }
+  
   </script>
+
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "KAkhpxDqEmIT32qzIEOni",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="KAkhpxDqEmIT32qzIEOni"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+    
 </body>
 </html>

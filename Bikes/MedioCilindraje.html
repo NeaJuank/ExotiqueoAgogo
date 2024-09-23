@@ -181,14 +181,28 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
-    function addToCart(name, brand, cylinder, price, image) {
-        const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-        const item = { name, brand, cylinder, price, image };
-        cartItems.push(item);
-        localStorage.setItem('cartItems', JSON.stringify(cartItems));
-        alert(`${name} ha sido añadido al carrito.`);
-    }
+    function addToCart(name, brand, cylinder, price) {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const item = { name, brand, cylinder, price }; // Sin imagen
+      cartItems.push(item);
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      alert(`${name} ha sido añadido al carrito.`);
+  }
+  
   </script>
+
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "KAkhpxDqEmIT32qzIEOni",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="KAkhpxDqEmIT32qzIEOni"
+    domain="www.chatbase.co"
+    defer>
+    </script>
   
 </body>
 </html>
