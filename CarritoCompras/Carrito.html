@@ -15,21 +15,24 @@
 <div id="navBar-placeholder">
     <nav id="navbarMenu">
       <ul id="navList">
-        <li class="nav-Items"><a href="#carouselExampleAutoplaying" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
-        <li class="nav-Items"><a href="#dynamic-image-text-section" class="links-Navbar"><i class="fa-regular fa-user"></i> Acerca de</a></li>
-        <li class="nav-Items"><a href="#sales-container" class="links-Navbar"><i class="fa-solid fa-wallet"></i> En venta</a></li>
-        <li class="nav-Items"><a href="#forms" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contacto</a></li>
+        <li class="nav-Items"><a href="../index.html#carouselExampleAutoplaying" class="links-Navbar"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="nav-Items"><a href="../index.html#dynamic-image-text-section" class="links-Navbar"><i class="fa-regular fa-user"></i> Acerca de</a></li>
+        <li class="nav-Items"><a href="../index.html#sales-container" class="links-Navbar"><i class="fa-solid fa-wallet"></i> En venta</a></li>
+        <li class="nav-Items"><a href="../index.html#forms" class="links-Navbar"><i class="fa-solid fa-address-book"></i> Contacto</a></li>
         <li class="nav-Items"><a href="CarritoCompras/Carrito.html" class="links-Navbar"><i class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Cart</a></li>
         <div class="nav-right">
-          <li class="nav-Items"><a href="login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
-          <li class="nav-Items"><a href="register/register.html" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
+          <li class="nav-Items"><a href="../login/login.html" class="links-Navbar"><i class="fa-solid fa-right-to-bracket"></i> Iniciar Sesión</a></li>
+          <li class="nav-Items"><a href="../register/register.html" class="links-Navbar"><i class="fa-solid fa-user-plus"></i> Regístrate</a></li>
         </div>
       </ul>
     </nav>
 </div>
 
-<h1>Carrito de Compras</h1>
-<div id="cart-items" class="tarjetas-contenedor"></div>
+<div id="cart-items" class="tarjetas-contenedor">
+    <h2>Productos en el Carrito</h2>
+    <!-- Los items se agregarán aquí dinámicamente -->
+</div>
+
 
 <button id="checkout-btn" class="btn btn-success">Proceder al Pago</button>
 
@@ -124,6 +127,19 @@
   // Llamar a la función para mostrar los items
   displayCartItems();
 </script>
+
+<script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "KAkhpxDqEmIT32qzIEOni",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="KAkhpxDqEmIT32qzIEOni"
+    domain="www.chatbase.co"
+    defer>
+    </script>
 
 </body>
 </html>

@@ -38,7 +38,7 @@
         <strong>Cilindraje:</strong> 110cc<br>
         <strong>Precio:</strong> $1,200 USD<br>
         <strong>Tipo:</strong> Scooter.</p>
-        <a href="#" class="btn btn-primary" onclick="addToCart('Navi', 'Honda', 110, 1200, 'assetsbikes/navi-rally-lateral.png')">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Navi', 'Honda', 110, 1200)">Añadir al carrito</a>
     </div>
     <div class="tarjeta">
         <img src="assetsbikes/platina110.png" alt="Moto 2">
@@ -47,7 +47,7 @@
         <strong>Cilindraje:</strong> 115cc<br>
         <strong>Precio:</strong> $1,300 USD<br>
         <strong>Tipo:</strong> Urbana.</p>
-        <a href="#" class="btn btn-primary" onclick="addToCart('Platina 110', 'Bajaj', 115, 1300, 'assetsbikes/platina110.png')">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Platina 110', 'Bajaj', 115, 130)">Añadir al carrito</a>
     </div>
     <div class="tarjeta">
         <img src="assetsbikes/HAYATE-susuki.png" alt="Moto 3">
@@ -56,7 +56,7 @@
         <strong>Cilindraje:</strong> 110cc<br>
         <strong>Precio:</strong> $1,500 USD<br>
         <strong>Tipo:</strong> Urbana.</p>
-        <a href="#" class="btn btn-primary" onclick="addToCart('Hayate', 'Suzuki', 110, 1500, 'assetsbikes/HAYATE-susuki.png')">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Hayate', 'Suzuki', 110, 1500)">Añadir al carrito</a>
     </div>
     <div class="tarjeta">
         <img src="assetsbikes/boxer-ct-100-ks-bajaj-col.png" alt="Moto 4">
@@ -65,7 +65,7 @@
         <strong>Cilindraje:</strong> 102cc<br>
         <strong>Precio:</strong> $1,100 USD<br>
         <strong>Tipo:</strong> Urbana.</p>
-        <a href="#" class="btn btn-primary" onclick="addToCart('Boxer CT-100', 'Bajaj', 102, 1100, 'assetsbikes/boxer-ct-100-ks-bajaj-col.png')">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('Boxer CT-100', 'Bajaj', 102, 1100)">Añadir al carrito</a>
     </div>
     <div class="tarjeta">
         <img src="assetsbikes/YBRZ_color_azul.png" alt="Moto 5">
@@ -74,7 +74,7 @@
         <strong>Cilindraje:</strong> 125cc<br>
         <strong>Precio:</strong> $1,500 USD<br>
         <strong>Tipo:</strong> Urbana.</p>
-        <a href="#" class="btn btn-primary" onclick="addToCart('YBR 125', 'Yamaha', 125, 1500, 'assetsbikes/YBRZ_color_azul.png')">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('YBR 125', 'Yamaha', 125, 1500)">Añadir al carrito</a>
     </div>
     <div class="tarjeta">
         <img src="assetsbikes/honda-Shine-10.png" alt="Moto 6">
@@ -83,7 +83,7 @@
         <strong>Cilindraje:</strong> 125cc<br>
         <strong>Precio:</strong> $1,600 USD<br>
         <strong>Tipo:</strong> Urbana.</p>
-        <a href="#" class="btn btn-primary" onclick="addToCart('CB Shine', 'Honda', 125, 1600, 'assetsbikes/honda-Shine-10.png')">Añadir al carrito</a>
+        <a href="#" class="btn btn-primary" onclick="addToCart('CB Shine', 'Honda', 125, 1600)">Añadir al carrito</a>
     </div>
   </div>
 
@@ -146,14 +146,30 @@
 </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <script>
-    function addToCart(name, brand, cylinder, price, image) {
+    function addToCart(name, brand, cylinder, price) {
         const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-        const item = { name, brand, cylinder, price, image };
+        const item = { name, brand, cylinder, price }; // Sin imagen
         cartItems.push(item);
         localStorage.setItem('cartItems', JSON.stringify(cartItems));
         alert(`${name} ha sido añadido al carrito.`);
     }
+    
   </script>
+
+  <script>
+    window.embeddedChatbotConfig = {
+    chatbotId: "KAkhpxDqEmIT32qzIEOni",
+    domain: "www.chatbase.co"
+    }
+    </script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="KAkhpxDqEmIT32qzIEOni"
+    domain="www.chatbase.co"
+    defer>
+    </script>
+
 </body>
 </html>
