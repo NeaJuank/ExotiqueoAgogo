@@ -34,7 +34,7 @@
 </div>
 
 
-<button id="checkout-btn" class="btn btn-success">Proceder al Pago</button>
+<button id="checkout-btn" class="btn btn-success" onclick="comprar()">Proceder al Pago</button>
 
 <footer class="footer">
     <div class="container">
@@ -124,6 +124,10 @@
       displayCartItems(); // Volver a mostrar los items
   }
 
+function comprar(){
+        alert("Gracias por tu compra")
+        removeFromCart();
+}
   // Llamar a la función para mostrar los items
   displayCartItems();
 </script>
